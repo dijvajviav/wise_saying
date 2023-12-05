@@ -9,7 +9,7 @@ public class App {
     }
     public void run(){
         System.out.println("== 명언 앱 ==");
-        long lastWiseSayingId = 1; // 번호
+        long lastWiseSayingId = 0; // 번호
 
         while(true){
             System.out.print("명령) ");
@@ -19,6 +19,7 @@ public class App {
             if(command.equals("종료")) {
                 break;
             }else if(command.equals("등록")){
+                long id = lastWiseSayingId + 1;
                 System.out.print("명언 : ");
                 String content = sc.nextLine().trim(); // 내용
                 System.out.print("작가 : ");
