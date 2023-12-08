@@ -1,9 +1,9 @@
 package com.ll;
 
 public class WiseSaying {
-    private long id;
-    private String content;
-    private String authorName;
+    private long id; // 번호
+    private String content; // 명언 내용
+    private String authorName; // 명언 작가
 
     // Alt + Insert 단축키 입력
 
